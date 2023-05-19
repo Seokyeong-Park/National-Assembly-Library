@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>국회도서관</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/main_img.css">
+        <link rel="stylesheet" href="./css/content.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+    <body>
+        <!-- header strat -->
+        <header class="header">
+            <div class="top">
+                <div class="box_inner">
+                    <ul class="h_top gubun">
+                        <li class="new"><a href="javascript:;">처음 방문하셨나요?</a></li>
+                        <li class="login"><a href="javascript:;">로그인</a></li>
+                        <li class="lang"><a href="javascript:;">ENGLISH</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="center">
+                <div class="box_inner">
+                    <div class="header_wrapper">
+                        <div class="logo">
+                            <a href="index.html"><img src="./img/logo.png" alt=""></a>
+                        </div>
+                        <div class="search">
+                            <div class="search_box">
+                                <select class="select" name="selectSearch" id="selectSearch" title="검색항목">
+                                    <option value="E">전자도서관 검색</option>
+                                    <option value="H">홈페이지 검색</option>
+                                </select>
+                                <form class="header_form" onsubmit="return false">
+                                    <input class="header_input--text" placeholder="검색어를 입력하세요">
+                                    <button class="header_input--button">검색</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="header_end">
+                            <img src="./img/btn_hambuger.png" alt="" class="btn_hambuger">
+                            <a href="javascript:;"><img src="./img/logo_slogan.png" alt="" class="slogan"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- menu start -->
+            <div class="box_inner">
+                <nav>
+                    <ul class="gnb">
+                        <li class="gnb_1">
+                            <a href="javascript:;" class="mainNav">입법서비스</a>
+                            <div class="submenu_list">
+                                <ul class="gnb_box1">
+                                    <img src="./img/img_menu_01.png" alt="img_menu_01">
+                                    <p>입법서비스</p>
+                                    <span>입법관련된 서비스를 찾아<br>보실 수 있습니다.</span>
+                                </ul>
+                                <ul>
+                                    <li class="menu01">
+                                        <a href="javascript:;" class="m_name">국회의원입법부</a>
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:;">국가전략정보포털</a>
+                                                <a href="javascript:;">의회정보</a>
+                                                <a href="javascript:;">법률정보</a>
+                                                <a href="javascript:;">AI의정분석서비스 아르고스</a>
+                                                <a href="javascript:;">전문가정보데이터베이스</a>
+                                                <a href="javascript:;">국회의원 정책자료</a>
+                                                <a href="javascript:;">국회·국회의원 보도자료</a>
+                                                <a href="javascript:;">국회·지방의회 의정정보</a>
+                                                <a href="javascript:;">독도홈페이지</a>
+                                                <a href="javascript:;">국회기록정보</a>
+                                                <a href="javascript:;">국회회의록 빅데이터</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu02">
+                                        <a href="javascript:;" class="m_name">학술・연구자 클라우드</a>
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:;">Web-DB</a>
+                                                <a href="javascript:;">오픈액세스 저널</a>
+                                                <a href="javascript:;">학술연구자정보</a>
+                                                <a href="javascript:;">국가학술정보</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu03">
+                                        <a href="javascript:;" class="m_name">저작권 서비스</a>
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:;">지식공유</a>
+                                                <a href="javascript:;">디지털콘텐츠식별체계</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnb_1">
+                            <a href="javascript:;" class="mainNav">책이야기</a>
+                            <div class="submenu_list_2">
+                                <ul class="gnb_box1">
+                                    <img src="./img/img_menu_02.png" alt="">
+                                    <p>책이야기</p>
+                                    <span>도서관련 콘텐츠를<br>찾아 보실 수 있습니다.</span>
+                                </ul>
+                                <ul>
+                                    <li class="menu01">
+                                        <a href="javascript:;" class="m_name">서평</a>
+                                    </li>
+                                    <li class="menu02">
+                                        <a href="javascript:;" class="m_name">신간</a>
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:;">금주의 신간</a>
+                                                <a href="javascript:;">국내 주간지 기사</a>
+                                                <a href="javascript:;">외국도서관 기증자료</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu03_2">
+                                        <a href="javascript:;" class="m_name">월간 국회도서관</a>
+                                        <a href="javascript:;" class="m_name">국회도서관 웹진</a>
+                                        <a href="javascript:;" class="m_name">국회도서관 웹진</a>
+                                        <a href="javascript:;" class="m_name">전자책(e-Book)</a>
+                                        <a href="javascript:;" class="m_name">북 큐레이션</a>
+                                        <a href="javascript:;" class="m_name">영상 큐레이션</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="gnb_1">
+                            <a href="javascript:;" class="mainNav">이용자마당</a>
+                            <div class="submenu_list_3">
+                                <ul class="gnb_box1">
+                                    <img src="./img/img_menu_03.png" alt="img_menu_03">
+                                    <p>이용자마당</p>
+                                    <span>도서관 이용자관련 서비스를<br>찾아 보실 수 있습니다.</span>
+                                </ul>
+                                <ul>
+                                    <li class="menu01">
+                                        <a href="notice_list.html" class="m_name">공지사항</a>
+                                    </li>
+                                    <li class="menu02">
+                                        <a href="javascript:;" class="m_name">신청 및 예약</a>
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:;">디지털정보센터 좌석예약</a>
+                                                <a href="javascript:;">야간 자료이용</a>
+                                                <a href="javascript:;">비치희망도서신청</a>
+                                                <a href="javascript:;">자료복사</a>
+                                                <a href="javascript:;">메일링 서비스</a>
+                                                <a href="javascript:;">참관</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu03">
+                                        <a href="javascript:;" class="m_name">납본・기증</a>
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:;">납본</a>
+                                                <a href="javascript:;">기증</a>
+                                                <a href="javascript:;">자료수집정책</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu04">
+                                        <a href="javascript:;" class="m_name">Open API</a>
+                                    </li>
+                                    <li class="menu05">
+                                        <a href="javascript:;" class="m_name">게시판</a>
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:;">자주하는 질문</a>
+                                                <a href="javascript:;">묻고답하기</a>
+                                                <a href="javascript:;">자유게시판</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnb_1">
+                            <a href="javascript:;" class="mainNav">도서관소개</a>
+                            <div class="submenu_list_4">
+                                <ul class="gnb_box1">
+                                    <img src="./img/img_menu_04.png" alt="img_menu_04">
+                                    <p>도서관소개</p>
+                                    <span>국회도서관을<br>소개합니다.</span>
+                                </ul>
+                                <ul>
+                                    <li class="menu01">
+                                        <a href="javascript:;" class="m_name">국회도서관</a>
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:;">국회도서관장</a>
+                                                <a href="javascript:;">조직 및 업무</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu02">
+                                        <a href="javascript:;" class="m_name">개방・공유</a>
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:;">발간자료</a>
+                                                <a href="javascript:;">소장현황</a>
+                                                <a href="pr.html">사이버 홍보실</a>
+                                                <a href="javascript:;">한국학술정보협의회</a>
+                                                <a href="javascript:;">정보공개</a>
+                                                <a href="javascript:;">관계법규</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu03">
+                                        <a href="javascript:;" class="m_name">도서관 이용</a>
+                                        <ul>
+                                            <li>
+                                                <a href="lib_use.html">이용안내</a>
+                                                <a href="javascript:;">자료실</a>
+                                                <a href="map.html">오시는 길</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- menu end -->
+        </header>
+        <!-- header end -->
+
+        <section>
+            <!-- img slider start -->
+            <div class="slider">
+                <div class="slides">
+                    <!-- radio buttons start -->
+                    <input type="radio" name="radio_btn" id="radio1">
+                    <input type="radio" name="radio_btn" id="radio2">
+                    <input type="radio" name="radio_btn" id="radio3">
+                    <input type="radio" name="radio_btn" id="radio4">
+                    <!-- radio buttons end -->
+
+                    <!-- slide images start -->
+                    <div class="slide first">
+                        <div class="slide_img1"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_img2"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_img3"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_img4"></div>
+                    </div>
+                    <!-- slide images end -->
+
+                    <!-- automatic navigation start -->
+                    <div class="navigation_auto">
+                        <div class="auto_btn1"></div>
+                        <div class="auto_btn2"></div>
+                        <div class="auto_btn3"></div>
+                        <div class="auto_btn4"></div>
+                    </div>
+                    <!-- automatic navigation end -->
+                </div>
+                <!-- manual navigation start -->
+                <div class="navigation_manual">
+                    <label for="radio1" class="manual_btn"></label>
+                    <label for="radio2" class="manual_btn"></label>
+                    <label for="radio3" class="manual_btn"></label>
+                    <label for="radio4" class="manual_btn"></label>
+                </div>
+                <!-- manual navigation end -->
+            </div>
+            <!-- img slider end -->
+
+            <!-- quick_ico start -->
+            <div class="content" style="background-color: #f0f3fa;">
+                <div class="box_inner">
+                    <div class="con_box">
+                        <div class="con_item1">
+                            <a href="javascript:;">
+                                <img src="./img/quick_icon1.png" alt="" class="con_img1">
+                                <div class="con_txt1">이용안내</div>
+                            </a>
+                        </div>
+                        <div class="con_item1">
+                            <a href="javascript:;">
+                                <img src="./img/quick_icon2.png" alt="" class="con_img1">
+                                <div class="con_txt1">좌석예약</div>
+                            </a>
+                        </div>
+                        <div class="con_item1">
+                            <a href="javascript:;">
+                                <img src="./img/quick_icon3.png" alt="" class="con_img1">
+                                <div class="con_txt1">협정기관PC인증</div>
+                            </a>
+                        </div>
+                        <div class="con_item1">
+                            <a href="javascript:;">
+                                <img src="./img/quick_icon4.png" alt="" class="con_img1">
+                                <div class="con_txt1">우편복사</div>
+                            </a>
+                        </div>
+                        <div class="con_item1">
+                            <a href="javascript:;">
+                                <img src="./img/quick_icon5.png" alt="" class="con_img1">
+                                <div class="con_txt1">야간자료신청</div>
+                            </a>
+                            </div>
+                        <div class="con_item1">
+                            <a href="javascript:;">
+                                <img src="./img/quick_icon6.png" alt="" class="con_img1">
+                                <div class="con_txt1">오시는길</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- quick_ico end -->
+
+            <!-- content start -->
+            <div class="book">
+                <div class="box_inner">
+                    <div class="book_box" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+                        <div class="book_story">
+                            <div class="b_col1">Book Story</div>
+                            <div class="f_col1">책이야기</div>
+                            <div class="book_box2">
+                                <div class="n_book">
+                                    <p class="b_txt">신간</p>
+                                    <div class="b_box">
+                                        <a href="javascript:;"><img src="./img/new_book.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="n_book">
+                                    <p class="b_txt">웹진</p>
+                                    <div class="b_box">
+                                        <a href="javascript:;"><img src="./img/webzine_img.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="n_book">
+                                    <p class="b_txt">월간국회도서관</p>
+                                    <div class="b_box">
+                                        <a href="javascript:;"><img src="./img/month_img.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="n_book">
+                                    <p class="b_txt">북큐레이션</p>
+                                    <div class="b_box">
+                                        <a href="javascript:;"><img src="./img/book.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="closed">
+                            <div class="b_col2">Closed</div>
+                            <div class="f_col2">휴무일</div>
+                            <div class="c_box"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="introduce">
+                <div class="box_inner">
+                    <div class="lib_intro" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+                        <div class="intro">
+                            <div class="b_col1">ABOUT</div>
+                            <div class="f_col1">도서관 소개</div>
+                            <div class="intro_box">
+                                <div class="intro_box2">
+                                    <a href="javascript:;"><img src="./img/introduce1.jpg" alt=""></a>
+                                    <p>국회도서관 →</p>
+                                </div>
+                                <div class="intro_box3">
+                                 <a href="javascript:;"><img src="./img/introduce2.jpg" alt=""></a>
+                                 <p>부산국회도서관 →</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner">
+                            <div class="b_col2">Banner</div>
+                            <div class="f_col2">배너</div>
+                            <div class="banner_box">
+                                <a href="javascript:;"><img src="./img/banner_1.jpg" alt=""></a>
+                                <a href="javascript:;"><img src="./img/banner_2.jpg" alt=""></a>
+                                <a href="javascript:;"><img src="./img/banner_3.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <div class="box_inner">
+                    <div class="news_sns" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+                        <div class="news_box">
+                            <div class="b_col1">News</div>
+                            <div class="f_col1">최신소식</div>
+                            <div class="notice_pr">
+                                <div class="notice_box">
+                                    <span class="no_txt"><a href="./notice_list.html">공지사항</a></span>
+                                    <ul class="notice_box2">
+                                        <li><a href="javascript:;">주간식단표(2023.5.8.~5.14)</a></li>
+                                        <li><a href="javascript:;">국회도서관 일반임기제공무원(인포그래픽 및 웹디자인, 휴직 대체) 채용시험 최종합격자 공고</a></li>
+                                        <li><a href="javascript:;">주간식단표(2023.5.1~5.7)</a></li>
+                                        <li><a href="javascript:;">국회도서관 일반임기제공무원(인포그래픽 및 웹디자인, 휴직 대체) 채용시험 서류전형 합격자 발표 및 면접시험 시행계획 공고</a></li>
+                                        <li><a href="javascript:;">주간식단표(2023.4.24~4.30)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="pr_box">
+                                    <span class="pr_txt"><a href="./pr.html">보도자료</a></span>
+                                    <ul class="pr_box2">
+                                        <li><a href="javascript:;">국회도서관, 제6기 대학생 SNS 서포터즈 발대식 개최</a></li>
+                                        <li><a href="javascript:;">국회도서관, 태재대학교와 포괄적 업무협약 체결</a></li>
+                                        <li><a href="javascript:;">프랑스의 청년 니트 지원정책 동향 및 시사점</a></li>
+                                        <li><a href="javascript:;">국회도서관, 여야 대표 싱크탱크 여의도연구원·민주연구원과 업무협약 체결</a></li>
+                                        <li><a href="javascript:;">국회도서관·거버넌스센터, 제3회 「국가거버넌스전략포럼」 공동 개최</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sns_box">
+                            <div class="b_col1">Social Media</div>
+                            <div class="f_col1">SNS</div>
+                            <div class="sns_box2">
+                                <div class="youtube">
+                                    <p class="sns_txt"><a href="javascript:;">YOUTUBE</a></p>
+                                    <a href="javascript:;"><img src="./img/youtube_img.jpg" alt="youtube_img"></a>
+                                </div>
+                                <div class="insta">
+                                    <p class="sns_txt"><a href="javascript:;">INSTAGRAM</a></p>
+                                    <a href="javascript:;"><img src="./img/insta_img.jpg" alt="insta_img"></a>
+                                </div>
+                                <div class="blog">
+                                    <p class="sns_txt"><a href="javascript:;">BLOG</a></p>
+                                    <a href="javascript:;"><img src="./img/blog_img.jpg" alt="blog_img"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content end -->
+        </section>
+
+        <footer>
+            <div class="foot_area box_inner">
+                <div class="foot_box1">
+                    <div class="foot_list1">
+                        <a href="index.html"><img src="./img/b_logo.png" alt="b_logo"></a>
+                        <p>개인정보처리방침</p>
+                        <p class="last_child">이메일수집거부</p>
+                    </div>
+                    <div class="foot_list2">
+                        <p>국회도서관 - 서울특별시 영등포구 의사당대로 1 (여의도동) (우07233)</p>
+                        <p>홈페이지 관련 문의 : webw3@nanet.go.kr / 전화문의 : 02-6788-4211, 080-788-4211(수신자 부담)</p>
+                        <p>Copyright&copy; 대한민국 국회도서관 All rights reserved.</p>
+                    </div>   
+                </div>
+                <div class="foot_box2">
+                    <div class="siteLink">
+                        <select name="sitelink" id="sitelink">
+                            <option value="">국회부산도서관</option>
+                            <option value="">대한민국 국회</option>
+                            <option value="">국회사무처</option>
+                            <option value="">국회예산정책처</option>
+                            <option value="">국회입법조사처</option>
+                            <option value="">국회미래연구원</option>
+                            <option value="">국회기록보존소</option>
+                            <option value="">헌법재판소도서관</option>
+                            <option value="">선거정보도서관</option>
+                            <option value="">한국학술지인용색인</option>
+                            <option value="">국가전자도서관</option>
+                            <option value="">국가정책연구포털</option>
+                            <option value="">국가학술정보 클라우드</option>
+                            <option value="">디지털콘텐츠식별체계</option>
+                            <option value="">학술연구자정보 공유</option>
+                            <option value="">AI의정분석서비스 아르고스</option>
+                            <option value="">국가전략정보포털</option>
+                        </select>
+                        <a href="javascript:;" class="btn_srch">이동</a>
+                    </div>
+                    <div class="b_footer">
+                        <img src="./img/logoSite01.jpg" alt="">
+                        <img src="./img/logoSite02.jpg" alt="">
+                        <img src="./img/logoSite03.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/img_slide.js"></script>
+</html>
