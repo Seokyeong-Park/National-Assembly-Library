@@ -278,6 +278,7 @@
     ,.submenu_list_3 .gnb_box1, .submenu_list_4 .gnb_box1 {
         display: none;
     }
+
     }
 
 /* 태플릿버전 */
@@ -311,8 +312,20 @@
     }
 
     /* menu */
-    .gnb {
+    .gnb .gnb_1:hover .submenu_list, .gnb .gnb_1:hover .submenu_list_2,
+    .gnb .gnb_1:hover .submenu_list_3, .gnb .gnb_1:hover .submenu_list_4 {
         display: none;
+    }
+    .menu01 ul li a:hover, .menu02 ul li a:hover, .menu03 ul li a:hover,
+    .menu05 ul li a:hover {
+        display: none;
+    }
+    .gnb {
+        flex-direction: column;
+        display: none;
+    }
+    .gnb.active {
+        display: flex;
     }
 }
 

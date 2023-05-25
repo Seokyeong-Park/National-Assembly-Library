@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         <div class="header_end">
-                            <img src="./img/btn_hambuger.png" alt="" class="btn_hambuger">
+                            <a href=""><img src="./img/btn_hambuger.png" alt="" class="btn_hambuger"></a>
                             <a href="javascript:;"><img src="./img/logo_slogan.png" alt="" class="slogan"></a>
                         </div>
                     </div>
@@ -507,5 +507,14 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        const toggleBtn = document.querySelector('.btn_hambuger');
+        const menu = document.querySelector('.gnb');
+
+        toggleBtn.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
     <script src="./js/img_slide.js"></script>
+    
 </html>
